@@ -1,11 +1,13 @@
 const music = {
   bands: [
+    "A Trib Called Quest",
     "Aphex Twink",
     "Asstodong",
     "Belle Biv, Da Ho",
     "Boyz N2 Men",
     "Deep In The Purple",
     "Frank Fappa and the Mothers I'd Like To Fuck Of Invention",
+    "Four In Her",
     "Hall In Oates",
     "Hüsky Düdes",
     "Insane Clown Pussy",
