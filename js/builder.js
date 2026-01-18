@@ -121,13 +121,13 @@ function rankPornTitles(startDate) {
 
     $('#JSArray').append('  "'+ dy+ '": { \n    titles: [\n');
     $.each(todayArray, function(key, value) {
-      $('#JSArray').append('      { title: "'+ todayArray[key].title +'", take: '+todayArray[key].take+', change: "'+todayArray[key].change+'" }');
+      $('#JSArray').append('      { title: `'+ todayArray[key].title +'`, take: '+todayArray[key].take+', change: "'+todayArray[key].change+'" }');
       if (key < 19) { $('#JSArray').append(','); }
       $('#JSArray').append('\n');
     });
     $('#JSArray').append('    ],\n    actors: [\n');
     $.each(actors, function(key, value) {
-      $('#JSArray').append('      "'+ actors[key] +'"');
+      $('#JSArray').append('      `'+ actors[key] +'`');
       if (key < 4) { $('#JSArray').append(','); }
       $('#JSArray').append('\n');
     });

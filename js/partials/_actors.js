@@ -2,6 +2,7 @@ const names = {
   female: [
     'Adrienne Barboned',
     "Alicia Bluestones",
+    'Amanda Sayfilth',
     'Anna Can Dick',
     'Anna Packed In',
     'Annal Gunge',
@@ -10,6 +11,7 @@ const names = {
     'Annette Boning',
     'Audrey Rugburn',
     'Bette Diddler',
+    'Brittany Snowbunny',
     'Carrie Fishsmell',
     "Catherine Zeta-Moans",
     "Daisychain Ridley",
@@ -41,16 +43,20 @@ const names = {
     'Mary Steamvirgin',
     'Meryl Streaks',
     'Michelle Pfluffer',
-    "Millie Bubblebutt Brown",
+    "Milfie Booty Brown",
     'Natalie Porkman',
     'Peepee Neuwirth',
+    'Portia de Pussi',
     "Quimta Brunson",
     'Rhea See Horny',
+    'Sam Smellibutt',
     'Sandra Bullcock',
     'SigHorny Weaver',
+    "Sydney Sweetloads",
     'Tilda Sweatin',
     "Tori's Spinning",
-    'Vivian Lay'
+    'Vivian Lay',
+    'Riding Winona'
   ],
   male: [
     "Aarod Pull",
@@ -71,6 +77,7 @@ const names = {
     "Corey Felt Men",
     "Cuck Norris",
     "Dick Van Lesbian",
+    "Dick Cage",
     "Dustin Boffman",
     'Dwayne “The Cock” Johnson',
     'Ed Semgma, Jr.',
@@ -88,6 +95,7 @@ const names = {
     "Kevin Spanky",
     "Idris Elbowdeep",
     "Jack Lemmon Party",
+    "James Nicebutt",
     "Jason Momboner",
     "Loose Willis",
     "Michael DickKeen",
@@ -106,6 +114,7 @@ const names = {
     "Tom Diddleson",
     "Tom Spanks",
     "Valtrex Kilmer",
-    "Yoni Depp"
+    "Yoni Depp",
+    'Walton Gaggins'
   ]
 };
