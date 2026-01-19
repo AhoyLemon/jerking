@@ -59,6 +59,7 @@ const names = {
     'Riding Winona'
   ],
   male: [
+    "Al Puckerino",
     "Aarod Pull",
     "Alec Baldtwat",
     "Alan Thicc",
@@ -93,6 +94,7 @@ const names = {
     "Johnathan Bonks",
     "Keith Gayvid",
     "Kevin Spanky",
+    "Kumail Nonjizzonme",
     "Idris Elbowdeep",
     "Jack Lemmon Party",
     "James Nicebutt",

@@ -203,6 +203,7 @@ var pornTitles = [
   "Pee Wee's Big Member",
   "Peggy Guggenheim: Fart Addict",
   "Penetrating Howard's End",
+  "People To Do In Denver When You're Dead",
   "Pies Like Us",
   "Pissmaster",
   "Piss of the Spider Woman",
@@ -573,6 +574,12 @@ var pornTitles = [
   "Cat's F/F Cradle",
   "Blowers For Algerdong",
   "The Old Man And The Pee",
+  "The Cunt of Monty Cristo",
+  "The Man in the Rubber Mask",
+  "Dr. Jerkoff and Mr. High",
+  "Watership Goin’ Down",
+  "20,000 Lesbians Under the Sea",
+  "The Sorrows Of Young Jerker",
   
   // PODCASTS ***************************************************
   "My Brother, My Brother In Me"
