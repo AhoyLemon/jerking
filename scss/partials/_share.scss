@@ -18,28 +18,40 @@
   
 
   .share-options { //display:grid; grid-template-columns: repeat(8,1fr); gap:20px;
-    display:flex; flex-wrap: wrap; gap:20px; text-align: center;
-    
+    display:flex; flex-wrap: wrap; justify-content: space-between;
+    > * { flex-basis: 48px; display: flex; flex-direction: column; gap:5px; }
     svg { transform: scale(1); width:100%; }
     svg, span { display: block; }
     a { cursor: pointer; text-align: center;
-      svg { margin-bottom: 6px; width:52px; height: 52px; margin-left: auto; margin-right: auto; transform-origin: center; }
-      span { font-size:12px; font-family: sans-serif; }
+      svg { transform-origin: center; }
+      span { font-size:10px; font-family: sans-serif; }
     }
     .icon { fill:$black; }
     .box { fill:currentColor; }
+
+    a.reddit { color:$color-reddit; fill:$color-reddit; }
+    a.facebook { color:$color-facebook; fill:$color-facebook; }
+    a.bluesky { color:$color-bluesky; fill:$color-bluesky; }
+    a.mastodon { color:$color-mastodon; fill:$color-mastodon; }
+    a.livejournal { color:$color-livejournal; fill:$color-livejournal; }
+
+
+
+
+
+
+
     a.twitter { color:$color-twitter; }
-    a.facebook { color:#6688c5; }
+    a.whatsapp { color:  $color-whatsapp; fill:  $color-whatsapp; }
     a.livejournal { color:$color-livejournal;
       span { font-size:9px; padding-top: 1px; }
     }
-    a.reddit { color:$color-reddit; }
     a.googleplus { color:$color-googleplus; }
-    a.tumblr { color:$color-tumblr; }
+    a.tumblr { color:$color-tumblr; fill:$color-tumblr; }
     a.sms { color:#ebdf39; }
-    a.telegram { color:#45c1ff; }
+    a.telegram { color:$color-telegram; fill:$color-telegram; }
     a.email { color:$color-email; }
-
+    a.gmail { color: $color-gmail; fill:$color-gmail; }
     a:hover { 
       svg { transform: scale(1.15); }
     }

@@ -39,25 +39,6 @@ const app = createApp({
       return `${msg}${url}`;
     });
 
-    // const randomActors = computed(() => {
-    //   const getRandomActors = (namesArray, count) => {
-    //     const shuffled = namesArray.sort(() => 0.5 - Math.random());
-    //     return shuffled.slice(0, count);
-    //   };
-
-    //   const femaleActors = getRandomActors(names.female, 2);
-    //   const maleActors = getRandomActors(names.male, 2);
-    //   const remainingActors = getRandomActors([...names.female, ...names.male], 1);
-
-    //   const allActors = [...femaleActors, ...maleActors, ...remainingActors];
-    //   const randomNumbers = Array.from({ length: 5 }, () => Math.floor(Math.random() * (300 - 30 + 1)) + 30).sort((a, b) => b - a);
-
-    //   return allActors.map((actor, index) => ({
-    //     name: actor,
-    //     films: randomNumbers[index]
-    //   }));
-    // });
-
     const formatDate = (x) => {
       displayDate.value = moment(x).format('YYYYMMDD');
       displayDatePretty.value = moment(x).format('MMMM Do, YYYY');
@@ -114,38 +95,54 @@ const app = createApp({
       const shareData = share.value;
       let w, h, l, t;
 
+      let shareUrl = `https://${m.toLowerCase()}.com/share?url=${shareData.url}&title=${shareData.msg}`;
+
       if (m == "Twitter") {
         w = 520;
         h = 270;
+        shareUrl = `https://twitter.com/intent/tweet?text=${shareData.msg}&url=${shareData.url}`;
       } else if (m == "Facebook") {
         w = 650;
         h = 520;
+        shareUrl = `https://www.facebook.com/sharer.php?u=${shareData.url}&quote=${shareData.msg}`;
       } else if (m == "Reddit") {
         w = 980;
         h = 780;
+        shareUrl = `https://reddit.com/submit?url=${shareData.url}&title=${shareData.msg}`;
+      } else if (m == "Bluesky") {
+        w = 980;
+        h = 780;
+        shareUrl = `https://bsky.app/intent/compose?text=${shareData.msg}\n${shareData.url}`;
+      } else if (m == "Mastodon") {
+        w = 650;
+        h = 520;
+        shareUrl = `https://mastodonshare.com?text=${shareData.msg}\n${shareData.url}`;
       } else if (m == "Tumblr") {
         w = 555;
         h = 850;
-      } else if (m == "Google Plus") {
-        w = 400;
-        h = 640;
       } else if (m == "LiveJournal") {
-        w = 790;
+        w = 790; 
         h = 640;
+        shareUrl = `https://www.livejournal.com/update.bml?subject=${shareData.title}&event=${shareData.msg}%0A%0A${shareData.url}`;
       } else if (m == "Telegram") {
-        window.open('tg://msg_url?text=' + shareData.msg + '\n' + shareData.url);
-        return;
+        w = 800;
+        h = 600;
+        shareUrl = `https://telegram.me/share/url?url=${shareData.url}&text=${shareData.msg}`;
       } else if (m == "SMS") {
         window.open('sms:?body=' + shareData.msg);
         return;
       } else if (m == "Email") {
         window.location.href = 'mailto:?subject=' + shareData.title + '&body=' + shareData.msg + '\n\n' + shareData.url;
         return;
+      } else if (m == "Gmail") {
+        w = 800;
+        h = 600;
+        shareUrl = `https://mail.google.com/mail/?view=cm&fs=1&su=${shareData.title}&body=${shareData.msg}%0A%0A${shareData.url}`;
       }
 
       l = (window.screen.width / 2) - ((w / 2) + 10);
       t = (window.screen.height / 2) - ((h / 2) + 50);
-      window.open(`https://${m.toLowerCase()}.com/share?url=${shareData.url}&title=${shareData.msg}`, m, `width=${w}, height=${h}, left=${l}, top=${t}`);
+      window.open(shareUrl, m, `width=${w}, height=${h}, left=${l}, top=${t}`);
 
       sendEvent('Share via ' + m, shareData.titlePretty, m);
       share.value.visible = false;

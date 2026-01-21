@@ -1,5 +1,4 @@
-// jshint -W098
-var pornTitles = [
+const pornTitles = [
   "'bating For Godot",
   "12 Years A Slut",
   "19″ 17″",
@@ -66,6 +65,7 @@ var pornTitles = [
   "CitizenWhore",
   "Clitty Lickers 2: The Legend of Curly Pubes",
   "Cool Handjob, Luke",
+  "Creamer vs Creamer",
   "Crotch-22",
   "Cum With Dick and Jane",
   "Cum and Cummer",
@@ -85,6 +85,7 @@ var pornTitles = [
   "Drilling Zoe",
   "Drive Horny",
   "Driving Into Ms Daisy",
+  "Eat Me In St. Louis",
   "Eight Pegged Freaks",
   "Eliot Ness and his Uncuckables",
   "Ender's Gay",
@@ -124,6 +125,7 @@ var pornTitles = [
   "God's Not Het",
   "Good Night And Good Fuck",
   "GoodFellatas",
+  "Goon In Sixty Seconds",
   "Gooper Troopers",
   "Gosford Porking",
   "Group Sex on the Bounty",

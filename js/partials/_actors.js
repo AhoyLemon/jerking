@@ -94,7 +94,7 @@ const names = {
     "Johnathan Bonks",
     "Keith Gayvid",
     "Kevin Spanky",
-    "Kumail Nonjizzonme",
+    "Kumail Nonojizzonme",
     "Idris Elbowdeep",
     "Jack Lemmon Party",
     "James Nicebutt",
